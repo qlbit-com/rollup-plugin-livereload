@@ -6,12 +6,18 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "types": "index.d.ts",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "endOfLine": "auto",
+    "arrowParens": "avoid"
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -cw",
-    "lint": "prettier -l .",
-    "fix": "prettier --write .",
-    "test": "cd test && rollup -cw ; cd ..",
+    "lint-check": "prettier --check *.mjs src/** test/**",
+    "lint": "prettier --write *.mjs src/** test/**",
+    "test": "rollup -c && rollup -c test.rollup.config.mjs -w",
     "prepare": "npm run build"
   },
   "keywords": [
@@ -38,12 +44,13 @@
     "node": ">=8.3"
   },
   "dependencies": {
-    "livereload": "^0.9.1"
+    "livereload": "^0.9.3",
+    "port-authority": "^1.1.1"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^9.0.0",
-    "port-authority": "^1.1.1",
-    "rollup": "2",
-    "rollup-plugin-serve": "1"
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "prettier": "*",
+    "rollup": "^3.26.3",
+    "rollup-plugin-serve": "^2.0.2"
   }
 }

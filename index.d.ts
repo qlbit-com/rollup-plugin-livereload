@@ -7,13 +7,13 @@ export interface RollupLivereloadOptions {
   /**
    * Inject the livereload snippet into the bundle which will enable livereload
    * in your web app.
-   * Defaults to true 
+   * Defaults to true
    */
   inject?: boolean
 
   /**
    * Log a message to console when livereload is ready
-   * Defaults to true 
+   * Defaults to true
    */
   verbose?: boolean
 
