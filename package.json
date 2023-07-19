@@ -6,19 +6,11 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "types": "index.d.ts",
-  "prettier": {
-    "printWidth": 120,
-    "semi": false,
-    "singleQuote": true,
-    "endOfLine": "auto",
-    "arrowParens": "avoid",
-    "trailingComma": "es5"
-  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -cw",
-    "lint-check": "prettier --check *.mjs src/** test/**",
-    "lint": "prettier --write *.mjs src/** test/**",
+    "lint-check": "standard *.mjs src/**/*.js test/**/*.js",
+    "lint": "standard --fix *.mjs src/**/*.js test/**/*.js",
     "test": "rollup -c && rollup -c test.rollup.config.mjs -w",
     "prepare": "npm run build"
   },
@@ -51,7 +43,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.1.0",
-    "prettier": "*",
+    "standard": "*",
     "rollup": "^3.26.3",
     "rollup-plugin-serve": "^2.0.2"
   }

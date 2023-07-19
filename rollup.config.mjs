@@ -7,13 +7,13 @@ export default {
     {
       file: 'dist/index.cjs.js',
       format: 'cjs',
-      exports: 'default',
+      exports: 'default'
     },
     {
       file: 'dist/index.es.js',
-      format: 'es',
-    },
+      format: 'es'
+    }
   ],
   external: ['livereload'].concat(builtinModules),
-  plugins: [resolve()],
+  plugins: [resolve()]
 }
