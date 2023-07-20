@@ -1424,10 +1424,10 @@ pkg-conf@^3.1.0:
     find-up "^3.0.0"
     load-json-file "^5.2.0"
 
-port-authority@^1.1.1:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/port-authority/-/port-authority-1.2.0.tgz#a4e59a55a99357cc5e509f114c1bd3f74d1302f5"
-  integrity sha512-izg9jj10CEbNWBX6B1IJtzs0IcMEIo+2to2IIvq0vvcqLnOi0Fz36LSL4mqp/pJsPDFB5jyrxUEEHRctmPu9Pg==
+port-authority@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/port-authority/-/port-authority-2.0.1.tgz#089a295b9c6bd957f8f62d608d3aa20bbc4da44c"
+  integrity sha512-Hz/WvSNt5+7x+Rq1Cn6DetJOZxKtLDehJ1mLCYge6ju4QvSF/PHvRgy94e1SKJVI96AJTcqEdNwkkaAFad+TXQ==
 
 prelude-ls@^1.2.1:
   version "1.2.1"
