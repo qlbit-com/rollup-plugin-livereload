@@ -12,7 +12,7 @@
     "lint-check": "standard *.mjs src/**/*.js test/**/*.js",
     "lint": "standard --fix *.mjs src/**/*.js test/**/*.js",
     "test": "rollup -c && rollup -c test.rollup.config.mjs -w",
-    "prepare": "npm run build"
+    "prepare": "yarn lint && yarn build"
   },
   "keywords": [
     "rollup",
