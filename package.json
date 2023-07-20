@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "livereload": "^0.9.3",
-    "port-authority": "^1.1.1"
+    "port-authority": "^2.0.1"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.1.0",
